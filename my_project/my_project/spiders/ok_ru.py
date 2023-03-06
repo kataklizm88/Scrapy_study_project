@@ -1,6 +1,7 @@
 import scrapy
 from scrapy.http import HtmlResponse
 from my_project.items import MyProjectItem
+# from items import MyProjectItem
 
 
 """

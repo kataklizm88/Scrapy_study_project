@@ -1,12 +1,11 @@
 from pymongo import MongoClient
 
 
-
-class MyProjectPipeline:
+class NewProjectPipeline:
 
     def __init__(self):
         client = MongoClient('mongodb://localhost:27017')
-        self.mongo_db = client.parser_ok
+        self.mongo_db = client.parse_labirint
 
     def process_item(self, item, spider):
         collection = self.mongo_db[spider.name]
